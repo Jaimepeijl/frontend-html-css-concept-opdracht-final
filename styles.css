@@ -1,0 +1,82 @@
+
+/* TABLE OF CONTENTS : */
+
+/* 1. Global Styles -------*/
+/* 2. Typography ----------*/
+/* 3. Layout --------------*/
+/* 4. Areas ---------------*/
+
+/* 1. Global Styles -------*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 2. Typography ----------*/
+header{
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 3. Layout --------------*/
+header{
+    background: rgb(72,69,228);
+    background: linear-gradient(90deg, rgba(72,69,228,1) 0%, rgba(87,34,205,1) 100%);
+}
+.boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.boxes article{
+    display: flex;
+    flex-direction: row;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    margin: 30px 100px;
+    padding: 0px;
+}
+
+/* 4. Areas ---------------*/
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: right;
+    gap: 30px;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100px;
+    gap: 30px;
+    margin: 130px;
+    padding: 50px;
+}
+
+button{
+    background-color: #ED4385;
+    color: white;
+    padding: 20px;
+    border: 0px;
+    border-radius: 50px;
+}
+
+.boxes article div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+.squiggle{
+    color: white;
+    margin: 0;
+    padding: 0;
+
+}
