@@ -16,12 +16,25 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
-
 h1, h2, h3{
     font-family: 'Merriweather', serif;
-
 }
-
+h2{
+    color: #5722CD;
+}
+p{
+    font-size: 15px;
+}
+a:link {
+    text-decoration: none;
+    color: #5722CD;
+}
+a:visited {
+    color: #4845E4;
+}
+a:hover{
+    color: #4845E4;
+}
 header, .form{
     color: white;
     text-align: center;
@@ -49,9 +62,17 @@ header, .form{
     gap: 30px;
     margin: 50px;
 }
-.line{
-    border-bottom: 30px solid white;
+.line1{
+    border-bottom: 50px solid white;
+    border-right: 100vw solid transparent;
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+}
+.line2{
+    border-top: 50px solid white;
     border-left: 100vw solid transparent;
+    top: 0;
     bottom: 0;
     left: 0;
 }
@@ -70,15 +91,18 @@ nav ul{
 
 /* 4.2 Header ---------------*/
 
-button{
+button, input[type="submit"]{
     background-color: #ED4385;
     color: white;
     padding: 20px;
-    border: 0px;
+    border: 0;
     border-radius: 50px;
+    box-shadow: 2px 3px 18px #00000057;
 }
 .squiggle{
     color: white;
+}
+img{
     margin: 0;
     padding: 0;
 }
@@ -93,28 +117,80 @@ button{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
 }
 .boxes article{
     display: flex;
     flex-direction: row;
-    border-width: 2px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-width: 1px;
     border-style: solid;
     border-color: black;
     margin: 30px 100px;
-    padding: 0px;
+}
+
+.boxes .variety{
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .boxes article div{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    flex-basis: 300px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    gap: 20px;
     padding: 10px;
+    margin-right: 100px;
+}
+.boxes img{
+    max-width: 450px;
+    height: 100%;
 }
 /* 4.5 WebDev ---------------*/
-
+.webdev{
+    margin: 50px;
+}
+.webdev section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    flex-basis: 500px;
+}
+.webdev section  article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-basis: 350px;
+    padding: 30px;
+    gap: 10px;
+}
+.webdev img{
+    max-width: 60px;
+    height: 100%;
+}
 /* 4.6 Form ---------------*/
-
+.form section{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+input{
+    max-width: 100%;
+}
 /* 4.7 Footer ---------------*/
 footer{
     background-color: black;
