@@ -23,7 +23,7 @@ h2{
     color: #5722CD;
 }
 p{
-    font-size: 15px;
+    font-size: 12px;
 }
 a:link {
     text-decoration: none;
@@ -48,7 +48,6 @@ header, .form{
 .narrow{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .narrow section{
     flex-basis: 500px;
@@ -56,7 +55,7 @@ header, .form{
     flex-grow: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     gap: 30px;
@@ -65,9 +64,6 @@ header, .form{
 .line1{
     border-bottom: 50px solid white;
     border-right: 100vw solid transparent;
-    /*top: 0;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
 }
 .line2{
     border-top: 50px solid white;
@@ -101,6 +97,10 @@ button, input[type="submit"]{
 }
 .squiggle{
     color: white;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+
 }
 img{
     margin: 0;
@@ -116,22 +116,26 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    padding: 100px;
+    gap: 30px;
 }
 .boxes article{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-    margin: 30px 100px;
+    border: 1px solid #00000035;
+    box-shadow: 5px 4px 18px #00000080;
+    margin: 0;
 }
 
 .boxes .variety{
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 300px;
 }
 
 .boxes article div{
@@ -143,15 +147,14 @@ img{
     flex-grow: 0;
     gap: 20px;
     padding: 10px;
-    margin-right: 100px;
 }
 .boxes img{
     max-width: 450px;
-    height: 100%;
+    height: auto;
 }
 /* 4.5 WebDev ---------------*/
 .webdev{
-    margin: 50px;
+    margin: 40px;
 }
 .webdev section{
     display: flex;
@@ -159,18 +162,21 @@ img{
     justify-content: center;
     align-items: start;
     flex-wrap: wrap;
-    flex-basis: 500px;
+    margin: 100px 0;
 }
-.webdev section  article{
+.webdev section article{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    flex-basis: 350px;
+    justify-content: stretch;
+    flex: 1 0 300px;
     padding: 30px;
-    gap: 10px;
+    margin: 15px;
+    gap: 15px;
+    border: 1px solid #00000057;
+    box-shadow: 6px 3px 18px #00000080;
 }
 .webdev img{
-    max-width: 60px;
+    max-width: 50px;
     height: 100%;
 }
 /* 4.6 Form ---------------*/
@@ -178,7 +184,7 @@ img{
     padding: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     gap: 30px;
 }
@@ -186,7 +192,7 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
 }
 input{
     max-width: 100%;
