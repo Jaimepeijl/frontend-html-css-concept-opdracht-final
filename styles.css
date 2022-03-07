@@ -6,7 +6,7 @@
 /* 2. Typography ----------*/
 /* 3. Layout --------------*/
 /* 4. Areas ---------------*/
-
+/*Tekst om branch te maken voor pull request*/
 /* 1. Global Styles -------*/
 *{
     margin: 0;
@@ -39,7 +39,6 @@ header, .form{
     color: white;
     text-align: center;
 }
-
 /* 3. Layout --------------*/
 header, .form{
     background: rgb(72,69,228);
@@ -72,9 +71,7 @@ header, .form{
     bottom: 0;
     left: 0;
 }
-
 /* 4. Areas ---------------*/
-
 /* 4.1 Nav ---------------*/
 nav ul{
     display: flex;
@@ -84,9 +81,7 @@ nav ul{
     gap: 30px;
     padding: 20px;
 }
-
 /* 4.2 Header ---------------*/
-
 button, input[type="submit"]{
     background-color: #ED4385;
     color: white;
@@ -103,16 +98,12 @@ button a p{
     position: absolute;
     margin: 0;
     padding: 0;
-
 }
 img{
     margin: 0;
     padding: 0;
 }
-
 /* 4.3 Intro ---------------*/
-
-
 
 /* 4.4 Boxes ---------------*/
 .boxes{
@@ -132,14 +123,12 @@ img{
     box-shadow: 5px 4px 18px #00000080;
     margin: 0;
 }
-
 .boxes .variety{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
 }
-
 .boxes article div{
     display: flex;
     flex-direction: column;
@@ -153,7 +142,6 @@ img{
 .boxes img{
     max-width: 40%;
 }
-
 /* 4.5 WebDev ---------------*/
 .webdev{
     margin: 40px;
